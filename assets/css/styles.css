@@ -1,0 +1,346 @@
+:root {
+    --primary-color: #021944;
+    --second-color: #159bd7;
+    --white-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: "Roboto", serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.25s;
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 80px;
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.header .logo_link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header .logo_img {
+    width: 50px;
+}
+
+.header .school-name {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header .nav-list {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    text-transform: uppercase;
+}
+
+.header .nav-item {
+    width: 150px;
+}
+
+.header .nav-item a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+/* Main */
+.hero {
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.hero .slide.active {
+    opacity: 1;
+}
+
+/* Nút điều hướng */
+.prev,
+.next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(235, 234, 234, 0.25);
+    border-radius: 50%;
+    color: rgb(6, 202, 247);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.prev {
+    left: 20px;
+}
+.next {
+    right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+    color: rgb(5, 226, 247);
+    background: rgba(255, 254, 254, 0.85);
+}
+
+/* Chấm tròn điều hướng */
+.dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.dot.active {
+    background: white;
+}
+
+/* News */
+.news {
+    padding: 60px 0;
+}
+
+.news-title {
+    font-size: 3.5rem;
+    line-height: 5.6rem;
+    font-weight: 700;
+    color: #021844;
+    text-align: center;
+}
+
+.news-container {
+    display: flex;
+    column-gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.news-card {
+    width: 400px;
+    height: 350px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+}
+
+.news-card:hover .news-img {
+    scale: 1.05;
+}
+
+.news-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 1.5s;
+}
+
+.news-info {
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.info-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #808080;
+}
+
+.red {
+    color: red;
+    padding: 0 5px;
+}
+
+.highlight {
+    transition: 0.5s;
+    color: #333;
+}
+
+.highlight:hover {
+    color: red;
+}
+
+.info-bottom {
+    margin-top: 15px;
+    font-weight: 500;
+    display: -webkit-box;
+    text-transform: uppercase;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    transition: 0.5s;
+}
+
+.info-bottom:hover {
+    color: var(--second-color);
+}
+
+.view-more {
+    display: flex;
+    align-items: center;
+    margin: 50px auto 0;
+    background: var(--second-color);
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 45px;
+    font-size: 1.5rem;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+.view-more:hover {
+    background: #fff;
+    color: var(--second-color);
+}
+
+.view-more:before,
+.view-more:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: var(--second-color);
+    transition: 400ms ease all;
+}
+
+.view-more:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.view-more:hover:before,
+.view-more:hover:after {
+    width: 100%;
+    transition: 600ms ease all;
+}
+
+.ml {
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.view-more:hover .ml {
+    transform: translateX(10px);
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-color);
+    color: white;
+}
+
+.footer-wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 20px 30px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 2.6fr;
+    column-gap: 40px;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_school-name {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer_logo {
+    width: 130px;
+}
+
+.footer-item {
+    margin-bottom: 20px;
+}
+
+.footer-item .title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer-item .sub-title {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 50px;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trường THPT Đoàn Thị Điểm</title>
+
+        <!-- Reset Css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Styles Css -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Embed Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <a href="/" class="logo_link">
+                    <img
+                        src="./assets/images/logo.png"
+                        alt="Trường THPT Đoàn Thị Điểm"
+                        class="logo_img"
+                    />
+                    <p class="school-name">Trường THPT Đoàn Thị Điểm</p>
+                </a>
+            </div>
+            <div class="menu">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#!">
+                                Giới thiệu
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!">
+                                Tin Tức
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!">
+                                Liên Hệ
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="hero">
+                <div class="slider">
+                    <img
+                        src="./assets/images/slide1.jpg"
+                        alt=""
+                        class="slide active"
+                    />
+                    <img
+                        src="./assets/images/slide2.jpg"
+                        alt=""
+                        class="slide"
+                    />
+                    <img
+                        src="./assets/images/slide3.jpg"
+                        alt=""
+                        class="slide"
+                    />
+                </div>
+                <!-- Nút điều hướng -->
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+
+                <!-- Chấm tròn -->
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            <div class="news">
+                <h2 class="news-title">TIN TỨC</h2>
+                <div class="news-container">
+                    <div class="news-card">
+                        <a
+                            href="https://www.facebook.com/permalink.php?story_fbid=pfbid0JdWY7CHgcMT4eyyCYifHEgxsAevTexVZbsTDRzv4KaRPvEjcfgYokZspLRignSe7l&id=100072022762955&rdid=ogHe1URMFZB6Z2iA#"
+                            class="news-link"
+                        >
+                            <img
+                                src="./assets/images/news1.jpg"
+                                alt=""
+                                class="news-img"
+                            />
+                            <div class="news-info">
+                                <div class="info-top">
+                                    <p class="info-title">
+                                        13.2.2025
+                                        <i class="fa-solid fa-heart red"></i>
+                                        <strong class="highlight"
+                                            >Tin của trường</strong
+                                        >
+                                    </p>
+                                </div>
+                                <div class="info-bottom">
+                                    <p>
+                                        Tổ chức lớp học 4 bài học lí luận chính
+                                        trị của Đoàn cho 170 thanh niên đủ điều
+                                        kiện tiêu chuẩn đứng vào hàng ngũ Đoàn
+                                        TNCS Hồ Chí Minh.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-card">
+                        <a
+                            href="https://www.facebook.com/permalink.php?story_fbid=pfbid02eRJkUn1kW7Vum3DpWHTGaSVMoDcFa8MUEBtcXSskBpqBunhDqFktdosx1xA1Ag5Tl&id=100072022762955&rdid=66x8uG9ValEN62fV#"
+                            class="news-link"
+                        >
+                            <img
+                                src="./assets/images/news2.jpg"
+                                alt=""
+                                class="news-img"
+                            />
+                            <div class="news-info">
+                                <div class="info-top">
+                                    <p class="info-title">
+                                        20.01.2025
+                                        <i class="fa-solid fa-heart red"></i>
+                                        <strong class="highlight"
+                                            >Tin của trường</strong
+                                        >
+                                    </p>
+                                </div>
+                                <div class="info-bottom">
+                                    <p>
+                                        Thực hiện CTTN Chiếc áo vui xuân nhân
+                                        dịp năm mới 29 tập thể lớp đã trao tăng
+                                        60 phần quà, mỗi phần quà trị giá
+                                        200.000đ.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-card">
+                        <a
+                            href="https://www.facebook.com/permalink.php?story_fbid=pfbid02FbnkGeP3bEEudwsxuvSAKzPS7Hw1MidcQQ6eFNwNKgPztU8BddcgJzff6Z4f26z4l&id=100072022762955&rdid=1VgVTt7QE9eZcqYd#"
+                            class="news-link"
+                        >
+                            <img
+                                src="./assets/images/news3.jpg"
+                                alt=""
+                                class="news-img"
+                            />
+                            <div class="news-info">
+                                <div class="info-top">
+                                    <p class="info-title">
+                                        20.1.2025
+                                        <i class="fa-solid fa-heart red"></i>
+                                        <strong class="highlight"
+                                            >Tin của trường</strong
+                                        >
+                                    </p>
+                                </div>
+                                <div class="info-bottom">
+                                    <p>
+                                        Phối hợp CLB trường ĐH Y Khoa Phạm Ngọc
+                                        Thạch TP HCM tổ chức truyền thông tư vấn
+                                        sức khỏe và tuyên truyền bệnh thủy đậu
+                                        cho học sinh.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="view-more">
+                    Xem thêm <i class="fa-solid fa-chevron-right ml"></i>
+                </button>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="footer-col col1">
+                        <p class="footer_school-name">
+                            Trường THPT Đoàn Thị Điểm - Bến Tre
+                        </p>
+                        <img
+                            src="./assets/images/logo.png"
+                            alt="Trường THPT Đoàn Thị Điểm"
+                            class="footer_logo"
+                        />
+                    </div>
+                    <div class="footer-col">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h3 class="title">SỨ MỆNH</h3>
+                                <p class="sub-title">
+                                    Đào tạo thế hệ trẻ chuẩn nhân cách, vững
+                                    kiến thức, giàu kỹ năng; năng động, sáng
+                                    tạo, có năng lực nền tảng vững chắc để có
+                                    thể tự học suốt đời và sẵn sàng phục vụ xã
+                                    hội.
+                                </p>
+                            </li>
+                            <li class="footer-item">
+                                <h3 class="title">GIÁ TRỊ CỐT LÕI</h3>
+                                <p class="sub-title">
+                                    Nhân ái - Trung thực - Trách nhiệm - Chăm
+                                    học - Chăm làm - Sáng tạo.
+                                </p>
+                            </li>
+                            <li class="footer-item">
+                                <h3 class="title">TẦM NHÌN</h3>
+                                <p class="sub-title">
+                                    Xây dựng Trường Trung học Phổ thông Nguyễn
+                                    Đình Chiểu Mỹ Tho trở thành nơi phát triển
+                                    cho học sinh những năng lực nền tảng và
+                                    những giá trị sống, kỹ năng sống để có thể
+                                    thích nghi, thành công trong mọi môi trường
+                                    học tập, làm việc trong nước và quốc tế.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    Copyright © 2025 MH. All right reserved.
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
