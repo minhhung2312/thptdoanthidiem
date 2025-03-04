@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Trường THPT Đoàn Thị Điểm</title>
+        <title>Tin Tức</title>
 
         <!-- Reset Css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -75,45 +75,22 @@
             </div>
         </header>
         <main class="main">
-            <div class="hero">
-                <div class="slider">
-                    <img
-                        src="./assets/images/slide1.jpg"
-                        alt=""
-                        class="slide active"
-                    />
-                    <img
-                        src="./assets/images/slide2.jpg"
-                        alt=""
-                        class="slide"
-                    />
-                    <img
-                        src="./assets/images/slide3.jpg"
-                        alt=""
-                        class="slide"
-                    />
-                </div>
-                <!-- Nút điều hướng -->
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-
-                <!-- Chấm tròn -->
-                <div class="dots">
-                    <span class="dot active" onclick="currentSlide(0)"></span>
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
+            <div class="news-header">
+                <div class="news-bg">
+                    <h1 class="news-header_title">TIN TỨC</h1>
                 </div>
             </div>
-            <div class="news">
-                <h2 class="news-title">TIN TỨC</h2>
-                <div class="news-container">
-                    <div class="news-card">
-                        <img
-                            src="./assets/images/news1.jpg"
-                            alt=""
-                            class="news-img"
-                        />
-                        <div class="news-info">
+            <div class="news-page-container">
+                <div class="news-map">
+                    <a href="/" class="news-map_link">Trang chủ </a> /
+                    <span style="margin-left: 4px">Tin của trường</span>
+                </div>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <div class="new-item_col">
+                            <img src="./assets/images/news1.jpg" alt="" />
+                        </div>
+                        <div class="news-item_col">
                             <div class="info-top">
                                 <p class="info-title">
                                     13.2.2025
@@ -136,14 +113,12 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="news-card">
-                        <img
-                            src="./assets/images/news2.jpg"
-                            alt=""
-                            class="news-img"
-                        />
-                        <div class="news-info">
+                    </li>
+                    <li class="news-item">
+                        <div class="new-item_col">
+                            <img src="./assets/images/news2.jpg" alt="" />
+                        </div>
+                        <div class="news-item_col">
                             <div class="info-top">
                                 <p class="info-title">
                                     20.01.2025
@@ -166,14 +141,12 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="news-card">
-                        <img
-                            src="./assets/images/news3.jpg"
-                            alt=""
-                            class="news-img"
-                        />
-                        <div class="news-info">
+                    </li>
+                    <li class="news-item">
+                        <div class="new-item_col">
+                            <img src="./assets/images/news3.jpg" alt="" />
+                        </div>
+                        <div class="news-item_col">
                             <div class="info-top">
                                 <p class="info-title">
                                     20.1.2025
@@ -196,118 +169,64 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <a href="./news.html" class="view-more">
-                    Xem thêm <i class="fa-solid fa-chevron-right ml"></i>
-                </a>
-            </div>
-            <div class="overview">
-                <div class="overview-col col1">
-                    <div class="overview-info">
-                        <div class="overview-info_top">
-                            <h2 class="overview-info_title">
-                                Trường THPT <br />
-                                Đoàn Thị Điểm
-                            </h2>
-                            <p class="overview-info_sub-title">
-                                ( Thạnh Phú - Bến Tre )
-                            </p>
-                        </div>
-                        <div class="overview-info_bottom">
-                            <p>
-                                Trường được thành lập năm 2002. Trường tọa lạc
-                                tại địa chỉ ấp Thạnh, xã Tân Phong, Xã Tân
-                                Phong, Huyện Thạnh Phú, Bến Tre. Đó là một chặng
-                                đường dài đầy gian nan, thử thách, nhưng với sự
-                                quan tâm giúp đỡ của các cấp, các ban ngành cùng
-                                sự chung sức, chung lòng của các thế hệ giáo
-                                viên, phụ huynh và học sinh, nhà trường đã đạt
-                                được những thành tích đáng tự hào, là một nhà
-                                lãnh đạo xứng đáng. Quá trình xây dựng và phát
-                                triển của trường có lịch sử lâu đời. Trường THPT
-                                Đoàn Thị Điểm - Tân Phong Bến Tre đã phát triển
-                                vượt bậc từ quy mô trường lớp, đội ngũ cán bộ,
-                                giáo viên. Hình ảnh và uy tín của trường trong
-                                xã hội. Trường THPT Đoàn Thị Điểm - Tân Phong
-                                Bến Tre đã phát triển và lớn mạnh về mọi mặt,
-                                công tác dạy và học được đẩy mạnh và đạt được
-                                những kết quả đáng ghi nhận. Hơn mười năm liền
-                                trường là đơn vị tiên tiến xuất sắc trong ngành
-                                giáo dục và đào tạo Thành phố Hà Tĩnh. Là trường
-                                trung học phổ thông công lập, cấp học cuối cùng
-                                của giáo dục phổ thông, sứ mệnh của nhà trường
-                                là “giúp học sinh phát triển toàn diện về đạo
-                                đức, trí tuệ, thể chất, thẩm mỹ và các kỹ năng
-                                cơ bản để hình thành nhân cách Việt Nam xã hội
-                                chủ nghĩa”.
-                            </p>
-                        </div>
-                        <a href="./overview.html" class="view-more">
-                            Xem thêm
-                            <i class="fa-solid fa-chevron-right ml"></i>
-                        </a>
-                    </div>
-                    <div class="overview-bg">
-                        <img src="./assets/images/school2.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="overview-col col2">
-                    <img src="./assets/images/school.jpg" alt="" />
-                </div>
-            </div>
-            <div class="club">
-                <h3 class="club-title">Nhóm - Câu lạc bộ</h3>
-                <ul class="club-container">
-                    <li class="club-item">
-                        <a
-                            href="https://www.facebook.com/STEMforDREAM"
-                            class="club-item-link"
-                        >
-                            <div class="club-wrap">
-                                <img
-                                    src="./assets/images/club1.jpg"
-                                    alt=""
-                                    class="club-item-img"
-                                />
-                            </div>
-                            <h4 class="club-name">CLB Stem For Dream</h4>
-                        </a>
                     </li>
-                    <li class="club-item">
-                        <a
-                            href="https://www.facebook.com/profile.php?id=100057027837021&mibextid=wwXIfr&rdid=xxX8mGw2hEcZDYHY&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16KtcgcWcB%2F%3Fmibextid%3DwwXIfr#"
-                            class="club-item-link"
-                        >
-                            <div class="club-wrap">
-                                <img
-                                    src="./assets/images/club2.jpg"
-                                    alt=""
-                                    class="club-item-img"
-                                />
+                    <li class="news-item">
+                        <div class="new-item_col">
+                            <img src="./assets/images/news4.jpg" alt="" />
+                        </div>
+                        <div class="news-item_col">
+                            <div class="info-top">
+                                <p class="info-title">
+                                    06.01.2025
+                                    <i class="fa-solid fa-heart red"></i>
+                                    <a href="./news.html" class="highlight"
+                                        >Tin của trường</a
+                                    >
+                                </p>
                             </div>
-                            <h4 class="club-name">CLB Ngoại Ngữ</h4>
-                        </a>
+                            <div class="info-bottom">
+                                <a
+                                    href="https://www.facebook.com/permalink.php?story_fbid=pfbid0kdoz2Ew4KWvVD1uNftrKL7Ra3TCRcAARQxC5QYGAvFDYLRjwq2A1vA7rjqHspb2rl&id=100072022762955&rdid=Ozgqqzyoqe9DZ8ij#"
+                                    class="news-link"
+                                    ><p>
+                                        Tổ chức sinh hoạt tuyên truyền 75 năm
+                                        ngày truyền thống HSSV
+                                        (09/01/1950-09/01/2025) cho hơn 800 Đoàn
+                                        viên thanh niên trong tiết sinh hoạt đầu
+                                        tuần.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="club-item">
-                        <a href="#!" class="club-item-link">
-                            <div class="club-wrap">
-                                <img
-                                    src="./assets/images/club3.jpg"
-                                    alt=""
-                                    class="club-item-img"
-                                />
+                    <li class="news-item">
+                        <div class="new-item_col">
+                            <img src="./assets/images/news5.jpg" alt="" />
+                        </div>
+                        <div class="news-item_col">
+                            <div class="info-top">
+                                <p class="info-title">
+                                    18.12.2024
+                                    <i class="fa-solid fa-heart red"></i>
+                                    <a href="./news.html" class="highlight"
+                                        >Tin của trường</a
+                                    >
+                                </p>
                             </div>
-                            <h4 class="club-name">CLB Thể Thao</h4>
-                        </a>
+                            <div class="info-bottom">
+                                <a
+                                    href="https://www.facebook.com/permalink.php?story_fbid=pfbid0BivjyovMMJXEW5McDKD7vzm6AgRod5yB8vj5bCvA4m2GCv87npQKgyeJBoT5eVtZl&id=100072022762955&rdid=FaoCvV07QM4PN8e5#"
+                                    class="news-link"
+                                    ><p>
+                                        Tham gia Hội thi sáng tạo STEM do sở
+                                        giáo dục và đào tạo tỉnh Bến Tre tổ
+                                        chức, kết quả đạt giải 2 cấp tỉnh.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
-                <!-- Chấm tròn -->
-                <div class="dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
             </div>
             <button id="backToTop" class="back-to-top">
                 <i class="fa-solid fa-chevron-up"></i>
@@ -364,6 +283,25 @@
                 </div>
             </div>
         </footer>
-        <script src="./assets/js/main.js"></script>
+        <script>
+            // Back top
+            document.addEventListener("DOMContentLoaded", function () {
+                const backToTopButton = document.getElementById("backToTop");
+
+                window.addEventListener("scroll", function () {
+                    if (window.scrollY > window.innerHeight / 2) {
+                        backToTopButton.classList.add("show");
+                        backToTopButton.classList.remove("hide");
+                    } else {
+                        backToTopButton.classList.add("hide");
+                        backToTopButton.classList.remove("show");
+                    }
+                });
+
+                backToTopButton.addEventListener("click", function () {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            });
+        </script>
     </body>
 </html>

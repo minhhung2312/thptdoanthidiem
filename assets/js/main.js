@@ -59,3 +59,63 @@ dots.forEach((dot, index) => {
 // Khởi chạy slider
 showSlide(slideIndex);
 startSlideShow();
+
+// Back top
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTopButton = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > window.innerHeight / 2) {
+            backToTopButton.classList.add("show");
+            backToTopButton.classList.remove("hide");
+        } else {
+            backToTopButton.classList.add("hide");
+            backToTopButton.classList.remove("show");
+        }
+    });
+
+    backToTopButton.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+
+// Trigger bottom
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".news-card");
+
+    function checkScroll() {
+        const triggerBottom = window.innerHeight * 0.8;
+
+        cards.forEach((card, index) => {
+            const cardTop = card.getBoundingClientRect().top;
+
+            if (cardTop < triggerBottom) {
+                setTimeout(() => {
+                    card.classList.add("show");
+                }, index * 400); // Mỗi phần tử xuất hiện cách nhau 300ms
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Kiểm tra ngay khi load trang
+});
+
+// Overview
+document.addEventListener("DOMContentLoaded", function () {
+    const overviewSection = document.querySelector(".overview-info");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target); // Chỉ chạy một lần
+                }
+            });
+        },
+        { threshold: 0.2 } // Kích hoạt khi 20% phần tử xuất hiện
+    );
+
+    observer.observe(overviewSection);
+});
