@@ -740,6 +740,10 @@ a:hover {
     margin-bottom: 10px;
 }
 
+.contact-item strong {
+    font-weight: bold;
+}
+
 .contact-gg-map {
     margin-top: 60px;
     width: 100%;
